@@ -86,6 +86,11 @@ export default function Home() {
           </form>
         </section>
       </main>
+      <footer className={styles.footer}>
+        © {new Date().getFullYear()} Venture. All rights reserved.
+        <br />
+        <a href="https://github.com/lance-malaga/venture" target="_blank" rel="noopener noreferrer">GitHub Repository Link</a>
+      </footer>
     </div>
   );
 }
