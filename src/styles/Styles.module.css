@@ -1,25 +1,26 @@
 .container {
-  width: 100%; 
+  font-family: 'Poppins', sans-serif; 
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
-  
-  .header {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: black; 
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
 }
+
 .pricingBoxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-  
 .card {
-  flex: 0 1 calc(33.33% - 20px); 
+  flex: 0 1 calc(33.33% - 20px);
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
@@ -28,123 +29,113 @@
   margin-bottom: 20px;
   color: black;
 }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .splineContainer {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .splineCanvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .pricingFeatures {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .pricingFeatureItem {
-    margin-bottom: 5px;
-  }
-  
-  @media (max-width: 1024px) {
-    .card {
-      flex: 0 1 calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      flex: 0 1 calc(100% - 20px);
-    }
-  }
- 
-  .header {
-    font-size: 2rem; 
-    text-align: left; 
-    margin-bottom: 20px;
-    color: black;
-    font-family: 'Arial', sans-serif; 
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
-  
-  .footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f9f9f9; 
-    color: black; 
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #364EC0;
 }
-    
-  .logo {
-    width: 50px; 
-    height: auto;
+
+.splineContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.splineCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pricingFeatures {
+  list-style: none;
+  padding: 0;
+}
+
+.pricingFeatureItem {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 1 calc(50% - 20px);
   }
+}
 
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 calc(100% - 20px);
+  }
+}
 
+.header {
+  text-align: left;
+}
 
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  color: black;
+}
 
+.logo {
+  width: 50px;
+  height: auto;
+}
 
 .intro {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-
 .splineLink {
-  float: right; 
+  float: right;
 }
 
 .splineLink a {
-
   color: blue;
   text-decoration: none;
 }
-
 
 .infoBox {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   color: black;
-  display: flex; 
+  display: flex;
 }
 
 .infoBoxContent {
   flex: 1;
-  max-width: 70%; 
+  max-width: 70%;
   margin-right: 20%;
   color: black;
-  
 }
 
 .smallSplineCanvas {
-  width: 300px; 
-  height: 200px; 
+  width: 300px;
+  height: 200px;
 }
+
 .splineContainerHorizontal {
   display: flex;
   align-items: center;
 }
 
 .splineCanvas {
-  width: 50%; 
+  width: 50%;
 }
+
 .infoBoxWithSpline {
   display: flex;
   flex-direction: row;
@@ -162,113 +153,77 @@
 }
 
 .splineCanvas {
-  width: 50%; 
-  max-width: 400px; 
+  width: 50%;
+  max-width: 400px;
 }
-
 
 .signupForm {
   background-color: #f9f9f9;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px; 
   margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .signupForm h2 {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px; 
   color: #364EC0;
+  font-weight: 600; 
 }
 
 .signupForm form {
   display: flex;
+  flex-wrap: wrap; 
+  gap: 15px; 
+  justify-content: center; 
 }
 
-.signupForm input[type="email"] {
+.signupForm input[type="text"],
+.signupForm input[type="email"],
+.signupForm input[type="tel"] {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
+  padding: 15px; 
+  border: 2px solid #dcdcdc; 
+  border-radius: 30px; 
+  font-size: 1rem;
+  outline: none; 
+}
+
+
+.signupForm input::placeholder {
+  color: #a9a9a9;
+}
+
+
+.signupForm input:focus {
+  border-color: #364EC0; 
 }
 
 .signupForm button[type="submit"] {
   background-color: #364EC0;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 20px; 
+  border-radius: 30px; 
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  border-radius: 30px;
 }
 
-.signupForm button[type="submit"]:hover {
-  background-color: #293f9d;
-  border-radius: 10px;
-}
-
-
-.pricingBoxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  flex: 0 1 calc(33.33% - 20px);
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #364EC0;
-}
-.card ul {
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-}
-
-.card li {
-  position: relative; 
-  padding-left: 20px; 
-  margin-bottom: 10px; 
-  line-height: 1.5; 
-}
-
-.card li::before {
-  content: '';
-  position: absolute;
-  left: 0; 
-  top: 50%; 
-  transform: translateY(-50%); 
-  width: 8px;
-  height: 8px; 
-  background-color: #364EC0; 
-  border-radius: 50%; 
-}
-@media (max-width: 1024px) {
-  .card {
-    flex: 0 1 calc(50% - 20px); 
-  }
+.signupForm button[type="submit"]:hover,
+.signupForm button[type="submit"]:focus {
+  background-color: #293f9d; 
+  transform: scale(1.05); 
 }
 
 @media (max-width: 768px) {
-  .card {
-    flex: 0 1 calc(100% - 40px);
+  .signupForm form {
+    flex-direction: column; 
+  }
+
+  .signupForm button[type="submit"] {
+    width: 100%; 
   }
 }

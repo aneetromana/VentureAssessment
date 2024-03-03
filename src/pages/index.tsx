@@ -15,10 +15,10 @@ export default function Home() {
     };
 
    
-    loadSplineScene('canvas3d-1', 'https://prod.spline.design/4n7GICMTMWqHJHwo/scene.splinecode');
+    loadSplineScene('canvas3d-1', 'https://prod.spline.design/Ox1mVkHTBq0o6nvs/scene.splinecode');
     loadSplineScene('canvas3d-2', 'https://prod.spline.design/XfY78btwEJMB0OZu/scene.splinecode');
     loadSplineScene('canvas3d-3', 'https://prod.spline.design/0P7ELUCwSVoSmEbD/scene.splinecode');
-    loadSplineScene('canvas3d', 'https://prod.spline.design/sr9irHStnJwtQ8e6/scene.splinecode');
+    loadSplineScene('canvas3d', 'https://prod.spline.design/qEmPyJmzmR6-ic2V/scene.splinecode');
   }, []);
 
   return (
